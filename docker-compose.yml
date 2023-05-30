@@ -4,26 +4,9 @@ services:
     image: mariadb:10.6
     restart: always
     env_file:
-      - .env.production
+      - .env.development
     volumes:
-      - ./database:/var/lib/mysql
-
-  server:
-    build:
-      context: ./server
-    restart: always
-    env_file:
-      - .env.production
+      - ./initial_data/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./initial_data/:/initial_data/
     ports:
-      - 8080:8080
-    depends_on:
-      - db
-
-  client:
-    build:
-      context: ./client
-    restart: always
-    env_file:
-      - .env.production
-    ports:
-      - 3000:80
+      - 3306:3306

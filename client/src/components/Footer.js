@@ -26,7 +26,7 @@ function Footer() {
       </Box>
       <footer style={styles.footer}>
         <Typography variant="body2" color="inherit">
-          © {new Date().getFullYear()} Your App Name. All rights reserved.
+          © {new Date().getFullYear()} City Bike App | Created by Björn
         </Typography>
         <Typography variant="body2" color="inherit">
           Powered by <Link href="https://mui.com" color="inherit" target="_blank" rel="noopener noreferrer">Material-UI</Link>
