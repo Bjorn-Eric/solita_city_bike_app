@@ -50,25 +50,11 @@ npm start
 
 The project focuses on the following features:
 
-- Data import from CSV files to a database or in-memory storage.
-- Validation of imported data, excluding journeys with duration less than 10 seconds or distances shorter than 10 meters.
 - Journey list view displaying departure and return stations, covered distance, and duration.
 - Station list view showing all the stations, their addresses, and journey statistics.
-- Single station view with detailed information about a specific station and additional calculations.
-- Optional features include pagination, ordering, searching, filtering, and more.
-
-## Documentation
-
-Please refer to the project's documentation for detailed information on how to use and extend the application. The documentation can be found in the `docs` directory.
+- Single station view with detailed information about a specific station, including a map view and additional calculations.
+- Paginating, sorting, and filtering the journey and station lists.
 
 ## Testing
 
 The project emphasizes proper testing practices. Unit tests, integration tests, and end-to-end tests are recommended to ensure the application's functionality and reliability. To run the tests, follow the instructions provided in the testing documentation.
-
-## Contributing
-
-Contributions to the project are welcome. If you have any ideas, suggestions, or improvements, please create a new issue or submit a pull request on the GitHub repository.
-
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
