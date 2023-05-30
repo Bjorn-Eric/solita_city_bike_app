@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  db:
+    image: mariadb:10.6
+    restart: always
+    env_file:
+      - .env.production
+    volumes:
+      - ./database:/var/lib/mysql
+
+  server:
+    build:
+      context: ./server
+    restart: always
+    env_file:
+      - .env.production
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+
+  client:
+    build:
+      context: ./client
+    restart: always
+    env_file:
+      - .env.production
+    ports:
+      - 3000:80
