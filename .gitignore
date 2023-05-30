@@ -1,0 +1,39 @@
+# Ignore build output and compiled files
+target/
+dist/
+build/
+*.class
+
+# Ignore dependencies
+node_modules/
+bower_components/
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.bak
+*.swp
+*.swo
+
+# Ignore logs and temporary files
+*.log
+*.log.*
+logs/
+temp/
+tmp/
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Ignore miscellaneous files
+.DS_Store
+Thumbs.db
+
