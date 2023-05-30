@@ -10,41 +10,34 @@ These instructions will guide you on how to build and run the project on your lo
 
 To run the project, you need to have the following software installed:
 
-- [Java](https://www.java.com/en/) (for backend)
-- [Node.js](https://nodejs.org/) (for frontend)
-- [MySQL](https://www.mysql.com/) or any other relational database (for data storage)
+- Java (for backend)
+- Node.js (for frontend)
+- MySQL or any other relational database (for data storage)
 
 ### Installation
 
 1. Clone the repository from GitHub.
-
-```bash
-git clone https://github.com/Bjorn-Eric/city_bike
-```
+git clone https://github.com/Bjorn-Eric/solita_city_bike_app.git
 
 2. Set up the backend:
-
 - Navigate to the `server` directory.
-- Open the project in your preferred IDE.
-- Configure the database connection in the `application.properties` file.
+- Open the `.env.production` file in the root directory.
+- Configure the database connection by updating the necessary environment variables.
+- Run the `init.sql` script located in the `initial_data` directory to set up the necessary database tables and import data.
 - Build and run the backend application.
 
 3. Set up the frontend:
-
 - Navigate to the `client` directory.
 - Install the dependencies by running the following command:
+  ```
+  npm install
+  ```
+- Start the frontend development server:
+  ```
+  npm start
+  ```
 
-```bash
-npm install
-```
-
-4. Start the frontend development server:
-
-```bash
-npm start
-```
-
-5. Open your browser and access the application at `http://localhost:3000`.
+4. Open your browser and access the application at [http://localhost:3000](http://localhost:3000).
 
 ## Features
 
